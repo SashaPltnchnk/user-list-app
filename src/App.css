@@ -3,6 +3,10 @@
   padding: 0;
 } */
 
+body {
+  background: lightgray;
+}
+
 header {
   border-bottom: 1px solid #000;
   display: flex;
@@ -11,6 +15,40 @@ header {
 
 ul {
   list-style-type: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.users-list__user:nth-child(even) {
+  background-color: rgb(206, 203, 203);
+}
+
+.users-list__user-info {
+  background-color: rgba(240, 238, 238, 0.623);
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #28a746de;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: space-between;
+  z-index: 999;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-icon {
+  position: absolute;
+  top: 35px;
+  right: 45px;
+  transform: rotate(45deg)
 }

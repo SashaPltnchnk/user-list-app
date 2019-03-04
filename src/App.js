@@ -7,7 +7,7 @@ import Dashboard from './components/dashboard/Dashboard'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="bg-light">
         <Header />
         <Dashboard />
 
